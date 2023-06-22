@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famesa</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Link the HTML file to the JavaScript file-->
+    <script src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="images_container">
+        <div class="logo_container">
+          <img src="images/famesa_logo.png" alt="famesa_logo" />
+        </div>
+        <div class="social_media_container">
+          <div class="facebook_phone">
+            <a
+              href="https://www.facebook.com/people/Famesa/100054467019421/"
+              target="_blank"
+              ><img src="images/facebook_logo.png" alt="facebook_logo" />
+            </a>
+            <a href="tel:+50527372675"
+              ><img src="images/phone_logo.png" alt="phone_logo"
+            /></a>
+            <a href="mailto: luisfelipelopezsoto@yahoo.es"
+              ><img
+                class="email_logo"
+                src="images/email_logo.png"
+                alt="email_logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <hr />
+        <ul>
+          <div class="navbar">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/about.html">¿Quiénes somos?</a></li>
+            <li><a href="/tipo.html">Tipo de Crédito</a></li>
+            <li><a href="/preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Slideshow-->
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide fade">
+              <img src="images/slideshow_1.png" />
+            </div>
+            <div class="swiper-slide fade">
+              <img src="images/slideshow_2.png" />
+            </div>
+            <div class="swiper-slide fade">
+              <img src="images/slideshow_3.png" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          // Optional parameters
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <div id="preguntas">
+        <h1>Preguntas Frecuentes</h1>
+        <ul>
+          <li>Requisitos Generales</li>
+        </ul>
+      </div>
+      <hr />
+    </main>
+    <footer>
+      <div id="contacto">
+        <h3>Contáctenos</h3>
+        <a
+          href="https://www.facebook.com/people/Famesa/100054467019421/"
+          target="_blank"
+          ><img src="images/facebook_logo.png" alt="facebook_logo" />
+        </a>
+        <a class="mail" href="mailto: luisfelipelopezsoto@yahoo.es"
+          ><img
+            class="email_logo"
+            src="images/email_logo.png"
+            alt="email_logo"
+          />
+        </a>
+        <a href="tel:+50527372675"
+          ><img src="images/phone_logo.png" alt="phone_logo"
+        /></a>
+        <p>Escuela Rubén Darío, 3 c. N. Jalapa, Nueva Segovia, Nicaragua</p>
+      </div>
+    </footer>
+  </body>
+</html>

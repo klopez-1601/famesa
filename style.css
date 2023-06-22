@@ -1,0 +1,153 @@
+.logo_container img {
+  width: 10%;
+  float: left;
+}
+
+.social_media_container img {
+  float: right;
+}
+
+.facebook_phone img {
+  width: 5%;
+}
+
+.social_media_container .email_logo {
+  width: 6%;
+}
+
+nav {
+  /*Add margin between the images and the nav*/
+  padding-top: 8%;
+}
+
+nav ul {
+  /*Remove bullet points*/
+  list-style: none;
+}
+
+nav li {
+  /*Show item in the same line*/
+  display: inline-block;
+  margin-right: 3%;
+}
+
+nav a {
+  /*Remove underline*/
+  text-decoration: none;
+  color: #4786c9;
+}
+
+nav a:hover {
+  color: #3a2eda;
+  text-decoration: underline;
+  font-style: italic;
+}
+*/
+
+/*Slideshow*/
+/*Add the padding and border in the total width and
+heigth of all elements*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  /*background-color: #222;
+  background-color: rgba(0, 0, 0, 0.7);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #fff;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.swiper .swiper-pagination-bullet-active {
+  background-color: #111;
+}
+
+.swiper .swiper-pagination-bullet-active:hover {
+  background-color: #999;
+}
+
+/* Fading animation */
+/*Create a fading animation for the images when the
+image changes. Set the animation duration to be 5 secs*/
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*Define the opacity of the images change during the
+animation using the @keyframes rule*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1{
+  color:#3a2eda;
+}
+
+h2{
+  color: #4786c9;
+  font-style: italic;
+}
+
+/*Footer*/
+h3{
+  color:#3a2eda;
+}
+
+footer img{
+  width: 4%;
+  vertical-align: middle;
+}
+
+.mail img{
+  width: 6%;
+  vertical-align: middle;
+}
+
+footer a{
+  text-decoration: none;
+}
